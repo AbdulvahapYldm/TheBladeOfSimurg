@@ -39,6 +39,9 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = Movement)
 	bool IsFalling;
 
+	UPROPERTY(BlueprintReadWrite, Category = Movement)
+	FVector Velocity;
+
 	UPROPERTY(BlueprintReadOnly, Category = Movement)
 	ERonahiCharacterState RonahiCharacterState;
 	

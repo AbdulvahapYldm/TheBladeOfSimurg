@@ -26,8 +26,9 @@ void URonahi_AnimInstance::NativeUpdateAnimation(float DeltaTime)
 
 	if (RonahiCharacterMovement)
 	{
+		Velocity = RonahiCharacterMovement->Velocity;
 		GroundSpeed = UKismetMathLibrary::VSizeXY(RonahiCharacterMovement->Velocity);
 		IsFalling = RonahiCharacterMovement->IsFalling();
-		RonahiCharacterState = AchoCharacter->GetCharacterState();
+		RonahiCharacterState = RonahiCharacter->GetCharacterState();
 	}
 }
