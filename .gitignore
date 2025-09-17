@@ -50,3 +50,6 @@ Config/*
 
 # Keep project descriptor
 !*.uproject
+
+# External Actors veya otomatik oluşturulan içerikler
+__ExternalActors__/
